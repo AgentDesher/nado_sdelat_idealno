@@ -43,7 +43,7 @@ span:last-of-type::after {
     content: "*";
 }
 
-span:not(:last-child){
+span:not(:last-child) {
     display: block;
 }
 
@@ -59,18 +59,18 @@ span:not(:last-child){
     font-size: 35px;
     font-weight: 400;
     letter-spacing: normal;
-    text-transform: capitalize;
+    text-transform: none;
     line-height: 1em;
     /*Параметры подложки*/
     border-radius: 20px;
     border: 2px solid #000;
     background: #FFF;
-    padding: 38px 46px 50px;
+    padding: 36px 44px;
     /*Тень*/
     box-shadow: 0px 14px 0 #000;
 }
 
-.page__heading:hover {
+.page__heading:hover::after {
     content: '';
     position: absolute;
     inset: 0;
